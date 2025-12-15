@@ -24,5 +24,5 @@ def decorator (func):
 def greet(name):
     print(f'Hello, {name}!')
 
-greet("Hamida")
+# greet("Hamida")
 
