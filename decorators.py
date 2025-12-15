@@ -21,8 +21,8 @@ def decorator (func):
     return wrapper
 
 @decorator
-def greet(name):
-    print(f'Hello, {name}!')
+# def greet(name):
+#     print(f'Hello, {name}!')
 
 # greet("Hamida")
 
