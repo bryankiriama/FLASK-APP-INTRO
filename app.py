@@ -6,5 +6,10 @@ app = Flask(__name__)
 def index():
     return "Hello, World!"
 
+@app.route("/about")
+def about():
+    return "About Page"
 
-# if __name__ == "__main__":
+
+if __name__ == "__main__":
+    app.run(port=4000,debug=True)
