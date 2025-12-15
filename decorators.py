@@ -18,9 +18,9 @@ def decorator (func):
         print("After calling the function")
 
         # return result
-    return wrapper
+#     return wrapper
 
-@decorator
+# @decorator
 # def greet(name):
 #     print(f'Hello, {name}!')
 
