@@ -13,3 +13,7 @@ ip adress => 192.168.1.100
 
 WSGI => Wekzeug
 orm => flask sql
+
+<!-- sqlalchemy relationships -->
+
+primary => idetifies a row in db table
