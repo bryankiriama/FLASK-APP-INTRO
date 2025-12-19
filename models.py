@@ -21,5 +21,5 @@ class User(db.Model):
 
         user = db.relationship('User', backref=db.backref('posts', lazy=True))
 
-        def __repr__(self):
-            return f'<Post {self.id}, {self.title}, {self.content}, {self.user_id}>'
+        # def __repr__(self):
+        #     return f'<Post {self.id}, {self.title}, {self.content}, {self.user_id}>'
