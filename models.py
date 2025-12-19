@@ -19,7 +19,7 @@ class User(db.Model):
         content = db.Column(db.Text, nullable=False)
         user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
-        user = db.relationship('User', backref=db.backref('posts', lazy=True))
+        # user = db.relationship('User', backref=db.backref('posts', lazy=True))
 
         # def __repr__(self):
         #     return f'<Post {self.id}, {self.title}, {self.content}, {self.user_id}>'
