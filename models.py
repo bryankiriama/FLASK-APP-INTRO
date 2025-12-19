@@ -12,8 +12,8 @@ class User(db.Model):
     def __repr__(self):
         return f'<User {self.id},{self.username}, {self.email}, {self.password}>'
 
-    class Post(db.Model):
-        __tablename__ = 'posts'
+    # class Post(db.Model):
+    #     __tablename__ = 'posts'
         # id = db.Column(db.Integer, primary_key=True)
         # title = db.Column(db.String(200), nullable=False)
         # content = db.Column(db.Text, nullable=False)
