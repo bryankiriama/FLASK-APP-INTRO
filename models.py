@@ -12,14 +12,14 @@ class User(db.Model):
     def __repr__(self):
         return f'<User {self.id},{self.username}, {self.email}, {self.password}>'
 
-    # class Post(db.Model):
-    #     __tablename__ = 'posts'
-        # id = db.Column(db.Integer, primary_key=True)
-        # title = db.Column(db.String(200), nullable=False)
-        # content = db.Column(db.Text, nullable=False)
-        # user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    class Post(db.Model):
+        __tablename__ = 'posts'
+        id = db.Column(db.Integer, primary_key=True)
+        title = db.Column(db.String(200), nullable=False)
+        content = db.Column(db.Text, nullable=False)
+        user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
-        # user = db.relationship('User', backref=db.backref('posts', lazy=True))
+        user = db.relationship('User', backref=db.backref('posts', lazy=True))
 
-        # def __repr__(self):
-        #     return f'<Post {self.id}, {self.title}, {self.content}, {self.user_id}>'
+        def __repr__(self):
+            return f'<Post {self.id}, {self.title}, {self.content}, {self.user_id}>'
